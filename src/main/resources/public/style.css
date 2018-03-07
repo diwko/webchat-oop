@@ -1,0 +1,216 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 16px;
+}
+
+div {
+	border-radius: 0px; 
+	padding: 0 10px 0 10px;
+	word-wrap: break-word;
+	margin: 10px 0 0 0;
+}
+
+#chat {
+	display: none;
+	width: 720px;
+	margin-top: 20px; 
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+#mainPanel {
+	float: left;
+	width: 70%;
+}
+
+#rightPanel {
+	float: left;
+	width: 30%;
+}
+
+#newMessage {
+	width: 100%;
+	background-color: #FFF;
+}
+
+#messages {
+	width: 100%;
+	background-color: #FFF;
+	color: #FFF;
+}
+
+#messages div {	
+	width: 80%;
+
+	border-bottom: 2px #3A3F47 solid;
+	border-right: 6px #3A3F47 solid;	
+
+	animation-name: newMessageAnimation;
+    animation-duration: 0.5s;     
+}
+
+.message {    	
+	float: left;
+	background-color: #AAB6C5;
+	
+
+}
+
+.myMessage {
+	float: right;
+	background-color: #D5D8DC;
+	
+}
+
+#userData {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background-color: #D5D8DC;
+	border-top: 2px #3A3F47 solid;
+	border-left: 6px #3A3F47 solid;	
+	text-align: center;
+	font-weight: bold;
+	color: #3A3F47;
+}
+
+#channels {
+	text-align: center;
+	color: #3A3F47;
+	padding: 0;
+
+}
+
+#channels div {
+	width: 100%;
+	border-top: 2px #013443 solid;
+	border-left: 6px #013443 solid;	
+	height: 40px;
+	line-height: 40px;
+}
+
+.channel {	
+	background-color: #E9E6D3;	
+}
+
+.followedChannel {	
+	background-color: #FFF6C4;	
+    pointer-events: none;
+}
+
+#channels div:hover {
+	background-color: #FFE1D9;
+}
+
+#newChannel {
+	width: 100%;
+	border-top: 2px #013443 solid;
+	border-left: 6px #013443 solid;	
+
+	height: 40px;
+	line-height: 40px;
+	background-color: #D5D8DC;
+	margin: 60px 0;
+	text-align: center;
+}
+
+#newChannel:hover {
+	background-color: #FFE1D9;
+
+}
+
+#messageInput {
+	width: 100%;
+	height: 40px;
+	border: none;
+	border-bottom: 2px #003729 solid;
+	border-right: 6px #003729 solid;	
+	border-radius: 0; 
+	outline: none;	
+	font-size: 16px;
+}
+
+.userName {
+	float: left;
+	color: #3A3F47;
+	font-size: 13px;
+	text-decoration: underline;
+	font-weight: bold;
+	margin: 10px 0;
+
+}
+
+.textMessage {
+	clear: both;
+	color: #3A3F47;
+	margin: 15px 0 10px 0;
+
+	font-size: 15px;
+}
+
+.timestamp {
+	float: right;
+	color: #3A3F47;
+	margin: 10px 0;
+
+	font-size: 13px;
+}
+
+#nameBox {
+  display: none;
+  width: 720px;
+  margin: 100px auto 0 auto;  
+  width: 15%; 
+}
+
+#nameInput {
+	width: 300px;
+	height: 40px;
+	border: none;
+	outline: none;	
+	border-bottom: 2px #3A3F47 solid;
+	border-right: 6px #3A3F47 solid;
+	font-size: 16px;
+	text-align: center;
+}
+
+#messageInput{
+	width: 80%;
+	float: right;
+	background-color: #FFF;
+	outline: none;
+	border: none;	
+	border-bottom: 2px #3A3F47 solid;
+	border-right: 6px #3A3F47 solid;	
+	border-radius: 0px;
+	color: #000;
+}
+
+#newChannelInput {
+	display: none;
+	width: 100%;
+	height: 40px;
+	background-color: #FFF;
+	outline: none;
+	border: none;
+	border-top: 2px #3A3F47 solid;
+	border-left: 6px #3A3F47 solid;
+	text-align: center;
+	color: #000;
+	margin: 60px 0;
+	font-size: 16px;
+}
+
+@keyframes newMessageAnimation {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}

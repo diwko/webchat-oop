@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>webchat.Chat</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="onLoadScript.js"></script>
+
+</head>
+<body onload="checkCookiesExist()">
+
+  <div id="nameBox">
+    <input id="nameInput" placeholder="Podaj imię:">
+  </div>
+
+  <div id="chat"> 
+    <div id="mainPanel">
+      <div id="newMessage">
+          <input id="messageInput" placeholder="Pisz tutaj">
+      </div>
+      <div id="messages"></div>
+    </div>
+    <div id="rightPanel">
+      <div id="userData"></div>
+      <div id="channels"></div>
+      <div id="newChannel">Nowy kanał</div>
+    </div>
+  </div>  
+
+  <script type="text/javascript" src="myScripts.js"></script>
+</body>
+</html>
